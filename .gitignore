@@ -2,6 +2,6 @@
 *.aux
 *.log
 *.out
-*.syctex.gz
+*.synctex.gz
 *toc
 
