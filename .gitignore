@@ -1,0 +1,7 @@
+# arquivos auxiliares tex
+*.aux
+*.log
+*.out
+*.syctex.gz
+*toc
+
