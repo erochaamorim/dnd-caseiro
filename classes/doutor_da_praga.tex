@@ -10,6 +10,7 @@
 \usepackage{stfloats}
 \usepackage{multirow}
 \usepackage[absolute,overlay]{textpos}
+\usepackage[colorlinks=true, linkcolor=black]{hyperref}
 
 \newcolumntype{L}[1]{>{\hsize=#1\hsize\raggedright\arraybackslash}X}%
 \newcolumntype{R}[1]{>{\hsize=#1\hsize\raggedleft\arraybackslash}X}%
@@ -43,9 +44,10 @@
 	\header{Doutor da Praga}
 	{\footnotesize
 	\begin{dndtable}[R{0.25} C{1.5} L{3} C{1.5} R{0.25} R{0.25} R{0.25} R{0.25} R{0.25} R{0.25} R{0.25} R{0.25} R{0.25}]
+		\label{tab:doutor_da_praga}
 		\textbf{Nível} & \textbf{Bônus de Proficiência} & \textbf{Características} & \textbf{Pílulas Conhecidas} & \textbf{1º} & \textbf{2º} & \textbf{3º} & \textbf{4º} & \textbf{5º} & \textbf{6º} & \textbf{7º} & \textbf{8º} & \textbf{9º} \\
 		1 & +2 & Letra de Médico, Farmacologia  & 2 & 2 & - & - & - & - & - & - & - & - \\
-		2 & +2 &  & 2 & 3 & - & - & - & - & - & - & - & - \\
+		2 & +2 & Tradição Médica  & 2 & 3 & - & - & - & - & - & - & - & - \\
 		3 & +2 &  & 2 & 4 & 2 & - & - & - & - & - & - & - \\
 		4 & +2 & Melhoria de Atributo & 3 & 4 & 3 & - & - & - & - & - & - & - \\
 		5 & +3 &  & 3 & 4 & 3 & 2 & - & - & - & - & - & - \\
@@ -88,7 +90,47 @@
 	\noindent\textbf{Testes de Resistência:} Inteligência, Sabedoria \\
 	\noindent\textbf{Perícias:} Você automaticamente recebe a perícia Medicina e escolha mais uma entre Lidar com Animais, Arcana, História, Investigação, Natureza e Sobrevivência \\
 	
-	\subsection{Pílulas}
+	\subsection{Letra de Médico}
+	Você é capaz de escrever rapidamente, e num estilo que apenas doutores da praga são capazes de ler com clareza. Qualquer outro indivíduo que tente ler algo escrito por você em letra de médico deve passar num teste de Inteligência de CD: 8 + seu modificador de proficiência + seu modificador de inteligência, e não será capaz de extrair os detalhes da informação, apenas conseguirá ler por altos.
+	Caso o indivíduo falhe, ele não poderá fazer uma nova tentativa para decifrar o que está escrito.
+	
+	\subsection{Farmacologia}
+	Como um estudante da farmacologia, você tem um livro de fórmulas para o preparo de substâncias com as mais diversas aplicações.
+	
+	\subsubsection{Pílulas}
+	No 1º nível, você conhece dois tipos de pílulas. Em níveis mais avançados você aprende novos tipos de pílula à sua escolha, conforme a \hyperref[tab:doutor_da_praga]{\textbf{tabela}} da classe. Consulte a seção \textbf{\nameref{sec:pilulas}} para mais detalhes.
+	
+	\begin{paperbox}[float=!b]{Seu Livro de Fórmulas}
+		As cocções presentes no seu livro de fórmula à medida que você avança níveis representam o resultado dos seus esforços de pesquisa, bem como os avanços intelectuais que você teve a respeito das leis da natureza. É possível que você encontre outras fórmulas em suas aventuras. Você poderia encontrar fórmulas de cocções no livro de outro doutor da praga, por exemplo, ou em anotações misteriosos encontradas num velho baú em um laboratório subterrâneo abandonado.
+		\subparagraph{Copiando uma Fórmula pra seu Livro} Quando você encontrar a fórmula de uma cocção de 1º nível ou superior, você pode copiá-la para seu livros de fórmulas caso ela seja de um nível de cocção que você é capaz de produzir, e se você tiver tempo e recursos o bastante para decifrá-la e copiá-la.
+		\par Copiar uma fórmula para seu livro de fórmulas envolve reproduzir a forma básica da fórmula e decifrar o sistema de notação que foi usado pelo doutor da praga que a escreveu. Você tem que praticar a cocção da fórmula até que você compreenda os passos e cuidados necessários com os ingredientes, e então transcrever isso para seu livro de fórmulas usando seu próprio sistema de notação.
+		\par Para cada nível da cocção, o processo leva 2 horsa e custa 50 po. O custo representa os ingredientes que você gasta durante os experimentos até dominar a fórmula, bem como a tinta necessária para as anotações. Uma vez que você tenha gasto o tempo e o dinheiro, você poderá preparar a cocção normalmente, como faz com suas demais cocções conhecidas.
+		\subparagraph{Substituindo o Livro}
+		Você pode copiar uma fórmula do seu livro de fórmulas para outro - por exemplo, se você quiser fazer uma cópia de segurança do seu livro. É como copiar uma fórmula nova para seu livro de fórmulas, exceto que é mais fácil e mais rápido, já que você já conhece a fórmula e compreende seu próprio sistema de notação. Você só precisa gastar 1 hora e 10 po para cada nível da fórmula copiada.
+		\par Se você perder seu livro de fórmulas, você pode usar o mesmo procedimento para transcrever as fórmulas das cocções que você tem preparadas para um novo livro de fórmulas. Preencher o resto do livro de fórmulas exigirá que você adquira novas fórmulas pelos meios tradicionais. Por essa razão, muitos doutores da praga costumam manter guardado um livro de fórmulas reserva em um local seguro.
+		\subparagraph{A Aparência do Livro} Seu livro de fórmulas é uma compilação única de fórmulas, com suas próprias decorações e notas de rodapé. Pode ser um comum e funcional volume de capa dura que você ganhou de seu mestre, ou um elegante tomo de luxo que você encontrou numa livraria antiga, ou até mesmo uma coleção mal organizada de folhas com anotações que você juntou depois de perder seu antigo livro num acidente.
+	\end{paperbox}
+
+	\subsubsection{Livro de Fórmulas}
+	No primeiro nível você possui um livro de fórmulas contendo seis fórmulas de cocções de 1º nível à sua escolha.
+	
+	\subsubsection{Preparando e Utilizando Cocções}
+	A \hyperref[tab:doutor_da_praga]{\textbf{tabela}} de Doutor da Praga mostra quantas cocções você pode preparar e utilizar por dia. Para utilizar uma dessas cocções você deve gastar um dos seus usos diário do mesmo nível da cocção ou superior. Você recupera todos os seus usos após um descanso longo.
+	\par Você prepara uma lista de cocções que estão disponíveis para uso. Para fazê-lo escolha um número de cocções de seu Livro de Fórmulas igual a seu modificador de inteligência + seu nível de doutor da praga (mínimo de uma cocção). As cocções devem ser de um nível que você é capaz de preparar e utilizar.
+	\par Por exemplo, se você é um doutor da praga de 3º nível, você possui quatro cocções diárias de 1º nível, e duas de 2º nível. Com uma inteligência de 16, sua lista de cocções preparadas do dia pode incluir seis cocções de 1º ou 2º nível em qualquer combinação. Se você preparar a cocção \textit{bálsamo cicatrizante}, você pode utilizá-la gastando um dos seus usos diários de 1º nível ou um de 2º nível. Utilizar a cocção não a remove da sua lista de cocções preparadas.
+	\par Você pode mudar a sua lista de cocções preparadas quando termina um descanso longo. Preparar uma nova lista de cocções requer que você invista tempo estudando seu livro de fórmulas e memorizando os ingredientes e passos do preparo, bem como os métodos e cuidados de uso da cocção: pelo menos 1 minuto por nível de cocção de cada cocção em sua lista.
+	
+	\subsubsection{Atributo de Cocção}
+	Inteligência é seu atributo chave para preparo e uso das cocções, afinal elas são fruto de estudo e trabalho mental. Use seu modificador de inteligência quando você estiver determinando a CD de uma cocção que você utilizar e quando tiver de fazer uma rolagem de ataque quando estiver atacando com uma.
+	
+	{\footnotesize
+	\textbf{CD do teste de resistência à cocção} = 8 + seu bônus de proficiência + seu modificador de Inteligência\\
+	\textbf{Modificador de ataque com cocção} = seu bônus de proficiência + seu modificador de Inteligência
+	}
+	
+	\section{Pílulas}
+	\label{sec:pilulas}
+	Pílulas são feitas a partir de compostos mais simples, e podem ser produzidas em grandes quantidades. Um doutor da praga tem acesso a um número ilimitado de pílulas. Segue uma lista de diversas pílulas.
 	
 	\spellheader%
 	{Pílula de Fumaça}
@@ -108,7 +150,9 @@
 	{Três rodadas}
 	Você lança uma pílula num alvo, ou num par de alvos que estejam no máximo a 1.5m um do outro (1 hex), que explode espalhando ácido. Os alvos devem ser bem sucedidos num teste de resistência de Destreza, ou tomar 1d6 de dano. O dano dessa pílula aumenta quando você atinge o 5º nível (2d6), o 11º (3d6) e o 17º (4d6).
 	
-	\subsection{Cocções}
+	\section{Cocções}
+	Cocções são preparos especiais que um doutor da praga pode preparar. Devido a complexidade e a carga de trabalho mental necessários, o doutor da praga pode preparar apenas algumas dessas cocções por dia, conforme a \hyperref[tab:doutor_da_praga]{\textbf{tabela}} da classe.
+	Segue uma lista de diversas cocções.
 	
 	\spellheader%
 	{Bálsamo Cicatrizante}
@@ -118,6 +162,6 @@
 	{S}
 	{Instantâneo}
 	Você ou um aliado regenera pontos de vida iguais a 1d8 + seu modificador de inteligência.
-		\subparagraph{Níveis superiores} Para cada nível de cocção acima do primeiro, essa cocção regenera +1d8 de vida.
+	\subparagraph{Níveis superiores} Para cada nível de cocção acima do primeiro, essa cocção regenera +1d8 de vida.
 	
 \end{document}
