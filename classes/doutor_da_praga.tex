@@ -151,19 +151,38 @@
 	\subsubsection{Mutante de Estimação}
 	A partir de quando você adotar a especialização médica Mutalista, no 2º nível, você se torna capaz de criar e treinar uma criatura modificada para assisti-lo e protegê-lo. Escolha uma criatura de tamanho Médio ou menor, e com classe de desafio 1/4 ou inferior, para ser seu companheiro animal. Adicione seu bônus de proficiência na CA da criatura, rolagens de acerto e dano de ataques, bem como quaisquer testes de resistência ou perícias em que a criatura seja proficiente. Além disso, a criatura recebe uma das mutações da \hyperref[tab:mutacoes_primarias]{\textbf{tabela}} de Mutações Primárias à sua escolha.
 	\par A criatura te obedece tão bem quanto possível. Ela age no seu turno, apesar de não fazer nenhum ação, a menos que você a comande. No seu turno, você pode dar instruções para a criatura se mover (sem gastar nenhuma ação). Você pode usar sua ação para comandar a criatura a tomar a ação \textit{Atacar}, ou \textit{Correr}, ou \textit{Desengajar}, ou \textit{Esquivar} ou \textit{Ajudar}.
-	\par Caso a criatura morra, você pode realizar uma cirurgia mutalística em um outro espécime para substituí-la. A cirurgia requer 8 horas de trabalho.
+	\par Caso a criatura morra, você pode realizar uma operação mutalística em um outro espécime para substituí-la. A operação requer 8 horas de trabalho.
 	
 	\subsubsection{Mutagênico de Obediência}
 	A partir do 5º nível você aperfeiçoou o controle sobre seu mutante de estimação, e não precisa mais dedicar tanta atenção para instruí-lo em combate. Toda vez que você usar sua ação para ordenar que seu mutante tome uma das ações \textit{Atacar}, \textit{Correr}, \textit{Desengajar}, \textit{Esquivar} ou \textit{Ajudar}, você pode realizar um único ataque com uma arma que esteja empunhando, ou utilizar uma pílula como ação bônus. Além disso, a criatura recebe mais uma das mutações da \hyperref[tab:mutacoes_primarias]{\textbf{tabela}} de Mutações Primárias à sua escolha. A criatura não pode receber uma mutação que já possua.
 	
 	\subsubsection{Mutagênico Aprimorado de Obediência}
 	A partir do 7º nível, em qualquer turno seu que seu mutante de estimação não ataque, você pode usar sua ação bônus para comandá-lo a tomar uma das ações \textit{Correr}, \textit{Desengajar}, \textit{Esquivar} ou \textit{Ajudar}.
+	Você também pode gastar sua reação para instruir que seu mutante defenda uma outra criatura. As rolagens de ataque contra a criatura feitas por qualquer inimigo dentro do alcance corpo-a-corpo do mutante tem desvantagem.
 	\par Sempre que seu mutante de estimação tiver de resistir a um efeito de controle mental na sua presença, ele tem vantagem no teste. Além disso, ele recebe mais uma das mutações da \hyperref[tab:mutacoes_primarias]{\textbf{tabela}} de Mutações Primárias à sua escolha. A criatura não pode receber uma mutação que já possua.
+	
+	\subsubsection{Mestre Mutalista}
+	A partir do 9º nível, sua habilidade como mutalista atinge um novo patamar.
+	Uma vez por descanso longo, você pode realizar uma operação mutalística para substituir permanentemente uma das mutações primárias de seu mutante de estimação por outra mutação primária que ele não possua. A operação exige 4 horas de preparação e execução e seu mutante de estimação acumula 1 nível de exaustão.
+	\par Alternativamente, você pode realizar uma operação mutalística em seu mutante de estimação, ou em qualquer outra criatura de tamanho Grande ou menor, para lhe conceder os benefícios de uma mutação primária por 1 dia. A operação exige 4 horas de preparação e execução.
+	
+	
+	\subsubsection{Mutagênicos Avançados}
+	A partir do 11º nível, você é capaz de provocar mutações ainda mais impressionantes nas suas cobaias. Seu mutante de estimação recebe uma mutação da \hyperref[tab:mutacoes_avancadas]{\textbf{tabela}} de Mutações Avançadas.
+	
+	\begin{paperbox}[float=!b]{Operações Mutagênicas}
+		\label{box:cirurgias_mutagenicas}
+		A Operação Mutagênica consiste de uma série de procedimentos, desde cirurgias até inoculação de mutagênicos, que o um Mutalista emprega para causar mutações controladas em suas cobaias.
+		\par Normalmente o Mutalista realiza suas cirurgias em seu Mutante de Estimação, ou outros animais e criaturas de baixa inteligência. Entretanto em alguns casos, o Mutalista pode realizar uma operação mutalística em humanóides e outras criaturas \textit{Inteligentes}, isto é, sencientes e com inteligência o bastante para se sentirem existencialmente perturbadas pelo procedimento e seus efeitos.
+		\par Quando o Mutalista realizar uma operação mutagênica em um humanóide ou outra criatura \textit{Inteligente} a criatura deverá realizar um teste de Sanidade de CD variando entre 10, 15 ou 20, de acordo com grau da mutação (primária, avançada ou apoteótica).
+		\par Caso a criatura tenha se submetido à operação de boa vontade, ela tem vantagem no teste de Sanidade.
+		\par Seu Mutante de Estimação sempre é bem sucedido nesses testes, mesmo que ele conte como uma criatura \textit{Inteligente}
+	\end{paperbox}
 	
 	\onecolumn
 	\header{Mutações Primárias}
 	{\footnotesize
-	\begin{dndtable}
+	\begin{dndtable}		
 		\label{tab:mutacoes_primarias}
 		\textbf{Mutação} & \textbf{Descrição} \\
 		Crescimento Desenfreado & A criatura aumenta em um sua classe de tamanho. Seus dados de vida mudam de acordo, e ela recebe +1 de Constituição e +1,5m em seus deslocamentos.\\
@@ -174,9 +193,29 @@
 		Hiper Metabolismo & A criatura recebe proficiência em testes de resistência de Constituição e +2 dados de vida. \\
 		Hiper Glândulas Adrenais & A criatura recebe +2 em rolagens de ataque e pode se mover uma distância igual a seu deslocamento quando realizar a ação \textit{Atacar}. O deslocamento pode ser dividido de qualquer forma antes ou depois do ataque, como numa ação de movimento normal. \\
 		Hiper Regeneração & A criatura recupera todos os seus dados de vida após um descanso longo. A criatura pode gastar um dado de vida regenerar 1dv + seu nível de mutalista dividido por dois, arredondando para baixo, como uma ação livre. A criatura deve completar um descanso curto ou longo para utilizar essa habilidade novamente. \\
-		Mutação Anfibiogênica & A criatura se torna capaz de respirar debaixo água, e recebe um deslocamento aquático igual a seu deslocamento padrão. Além disso, toda vez que for atacar, pode substituir um de seus ataques por um ataque que lança um esguicho oleoso num alcance de 4,5m. O alvo deve passar num teste de resistência de destreza de CD igual a 8 + modificador de destreza da criatura + seu modificador de proficiência ou seu deslocamento será reduzido pela metade por três rodadas. Durante essas três rodadas a criatura também se torna \textit{Vulnerável à Fogo} se não tiver resistência ou imunidade a dano de \textit{Fogo}. \\
-		Mutação Aracnogênica & A criatura recebe um deslocamente de escalada igual a seu deslocamento padrão. Além disso, toda vez que for atacar, pode substituir um de seus ataques por um ataque que lança uma rede de teia com alcance de 4,5m. O alvo deve passar num teste de resistência de destreza de CD igual a 8 + modificador de destreza da criatura + seu modificador de proficiência ou ficará \textit{Emaranhado} até que utilize sua ação para passar num teste de Destreza ou Força (mesma CD) ou até que a teia ou a criatura recebam dano igual à CD. \\
+		Mutação Anfibiogênica & A criatura se torna capaz de respirar debaixo água, e recebe um deslocamento aquático igual a seu deslocamento padrão. Além disso, toda vez que for atacar, pode substituir um de seus ataques por um ataque que lança um esguicho oleoso num alcance de 4,5m. O alvo deve passar num teste de resistência de destreza de CD igual a 8 + modificador de Destreza da criatura + bônus de proficiência ou seu deslocamento será reduzido pela metade por três rodadas. Durante essas três rodadas a criatura também se torna \textit{Vulnerável à Fogo} se não tiver resistência ou imunidade a dano de \textit{Fogo}. \\
+		Mutação Aracnogênica & A criatura recebe um deslocamento de escalada igual a seu deslocamento padrão. Além disso, toda vez que for atacar, pode substituir um de seus ataques por um ataque que lança uma rede de teia com alcance de 4,5m. O alvo deve passar num teste de resistência de destreza de CD igual a 8 + modificador de Destreza da criatura + bônus de proficiência ou ficará \textit{Emaranhado} até que utilize sua ação para passar num teste de Destreza ou Força (mesma CD) ou até que a teia ou a criatura recebam dano igual à CD. \\
+		Hiper Acuidade Motora & A criatura recebe proficiência em \textit{Acrobracia} e +2 de Destreza. \\
+		Neocórtex Desenvolvido & A criatura se torna capaz de tomar a ação \textit{Usar Objeto} em combate, e interagir com objetos e mecanismos de acordo com as suas instruções. Além disso a criatura recebe +2 de Inteligência. Se isso aumentar a inteligência da criatura para 7 ou mais, ela conta como uma criatura \textit{Inteligente}. Ela não é capaz de falar, mas é capaz de compreender seus comandos e se comunicar com você como se fosse um humanóide pouco inteligente. \footnote{Caso o atributo opcional Sanidade seja adotado na campanha que você está jogando, uma criatura \textit{Inteligente} também deve ter o seu valor de Sanidade determinado. Use um valor igual ao de Inteligência obtida após essa mutação.}
 	\end{dndtable}
+	}
+	\twocolumn
+	
+	\onecolumn
+	\header{Mutações Avançadas}
+	{\footnotesize
+		\begin{dndtable}
+			\label{tab:mutacoes_avancadas}
+			\textbf{Mutação} & \textbf{Descrição} \\
+			Gigantismo & A criatura aumenta em um sua categoria de tamanho. Seus dados de vida aumentam de acordo. Além disso, ela recebe +3m de deslocamento, e +4 de Força. \\
+			Reflexos Pré-Cognitivos & A criatura tem proficiência em testes de resistência de Destreza e +4 em CA. Sempre que a criatura puder realizar um teste de resistência de Destreza para reduzir o dano de um ataque, magia, ou efeito, ela não sofre nenhum dano caso passe no teste, e sofre o dano reduzido no caso de uma falha. \\
+			Potência Mutagênica & A criatura recebe +3 em rolagens de ataque e dano, e a CD de para resistir a suas habilidades também aumenta em +3. \\
+			Mutação Peçonhenta & Toda vez que um alvo for atingido por um golpe corpo-a-corpo da criatura, o alvo deve fazer um teste de resistência de Constituição de CD igual a 8 + modificador de Constituição da criatura + bônus de proficiência. Se o alvo fracassar no teste, sofrerá 4d6 de dano de veneno. Caso seja bem sucedido, sofrerá apenas 2d6 de dano. Se o alvo for reduzido a 0 PV ou menos, está estável, porém envenenado por 1 hora, e está paralizado enquanto estiver sob efeito desse envenenamento. \\
+			Cognição Extra-Sensorial & A criatura recebe proficiência em \textit{Sobrevivência}, +4 de Sabedoria, e pode utilizar seus testes de \textit{Sobrevivência} para rastrear alvos. A criatura possui Visão Cega de 18m, e  Visão no Escuro de 36m. \\
+			Ferocidade Mutagênica & Quando a criatura tomar a ação Atacar, ela pode realizar um ataque extra. \\
+			Hiper Metabolismo Celular & Sempre que a criatura rolar dados de vida para regenerar PV, ela regenera o dobro do valor. A criatura recupera todos os seus dados de vida ao final de um descanso longo. A criatura recebe proficiência em testes de resistência de Constituição, e +3 de Constituição. \\
+			Psiquismo & A criatura se torna capaz de tomar a ação \textit{Usar Objeto} em combate, e interagir com objetos e mecanismos de acordo com as suas instruções. Além disso a criatura recebe +4 de Inteligência. Se isso aumentar a inteligência da criatura para 7 ou mais, ela conta como uma criatura \textit{Inteligente}. A criatura é capaz de se comunicar telepaticamente num raio de até 36m. Toda vez que a criatura tomar a ação \textit{Atacar}, ela pode substituir um de seus ataques por um ataque psíquico. O ataque psíquico tem 36m de alcance. O alvo deve fazer um teste de resistência de Sabedoria com CD igual a 8 + modificador de Inteligência da criatura + bônus de proficiência. Se falhar, o alvo sofre 2d6 de dano, e está \textit{Atordoado} até o fim de seu próximo turno. Se passar, sofre apenas 1d6 de dano. \footnote{Caso o atributo opcional Sanidade seja adotado na campanha que você está jogando, uma criatura \textit{Inteligente} também deve ter o seu valor de Sanidade determinado. Use um valor igual ao de Inteligência obtida após essa mutação.} \\
+		\end{dndtable}
 	}
 	\twocolumn
 		
